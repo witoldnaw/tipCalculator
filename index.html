@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tip Kalkulator Witusia</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Epilogue:wght@300;400;500;700&family=Lato&family=Public+Sans:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="bill-wrapper">
+            <p class="bill-value">Bill</p>
+            <input type="number" id="bill-input" min="1" value="0"/>
+        </div>
+
+        <div class="tip-buttons">
+            <p class="select-tip">Select Tip %</p>
+            <button type="number" value="0.05" class="btn">5%</button>
+            <button type="number" value="0.10" class="btn">10%</button>
+            <button type="number" value="0.15" class="btn">15%</button>
+        </div>
+
+        <div class="num-of-people-wrapper">
+            <p class="num-of-people">Number of people</p>
+            <input type="number" class="num-of-people-input" min="1" value="0"/>
+            <div class="btn-calculate-wrapper">
+                <button class="calculate">Calculate</button>
+            </div>
+        </div>
+
+        <div class="tip-amount-wrapper">
+            <p class="total-tip-amount">Tip amount</p>
+            <p class="amount-per-person">/ person</p>
+        </div>
+        <div class="total-sum-wrapper">
+            <p class="total-amount">Total</p>
+            <p class="amount-per-person">/ person</p>
+        </div>
+
+        <div class="btn-reset-wrapper">
+            <button class="reset">RESET</button>
+        </div>
+
+        <span class="tip-display">$0.00</span>
+        <span class="total-display">$0.00</span>
+
+    </main>
+
+    <script src='main.js'></script>
+</body>
+
+</html>
